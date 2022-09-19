@@ -7,34 +7,26 @@ h1 {
     font-size: 32px;
 }
 
-table {
-    border: 1px solid #020202;
-    /* color: red; */
-}
-
-td {
+td, th, tbody, table  {
     border: 1px solid #020202;
 }
 
-caption {
-    border: 1px solid #020202;
-}
-
-th {
-    border: 1px solid #020202;
-}
 
 figcaption {
     font-style: italic;
 }
 
-figcaption img {
-    /* float: right; */
-    /* padding: 0 20px 20px 0; */
-}
 
 body {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+}
+
+.image {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top:20px
+    
 }
