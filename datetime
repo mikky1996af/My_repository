@@ -1,0 +1,21 @@
+from datetime import date 
+
+def get_date_range(start, end, result = []):
+     x = lambda a: int(''.join(str(a).split('-')))
+    if x(end) - x(start) > 0:
+  
+        while True:
+             if start.month <=12:
+                 try:
+                     result.append(start)
+                     if str(start).split()==str(end).split():
+                         return result
+                     else:
+                         if start.month == 12 and start.day == 31:
+                             start = start.replace(year = start.year + 1, month = 1, day = 1)
+                         start = (start.replace(day = start.day + 1))
+                 except:
+                     start = start.replace(month = start.month + 1, day = 1)
+             get_date_range(start, end, result)
+    else:
+        return list(set((start, end)))
