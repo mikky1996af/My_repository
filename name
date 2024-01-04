@@ -1,0 +1,22 @@
+function advancedSort(data) {
+    let lst = []
+
+    for (let elem of data){
+        for (let i of [1,1,1,2,2,3,3,4,4,10,10,10]){
+            if (i === elem){
+                lst.push([i])
+            }
+        
+            console.log(i, 0)
+        }
+        
+    
+        console.log(elem)
+    }
+    return lst
+    /*data.sort((a, b) => a - b)
+    return data*/
+
+
+
+}
